@@ -17,6 +17,8 @@
 		583E44462ABDB57400CB19DF /* loginUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44452ABDB57400CB19DF /* loginUITestsLaunchTests.swift */; };
 		583E44532ABDCC7D00CB19DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44522ABDCC7D00CB19DF /* LoginViewController.swift */; };
 		583E44552ABDD2FC00CB19DF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44542ABDD2FC00CB19DF /* RegisterViewController.swift */; };
+		583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44582ABFD74F00CB19DF /* Color+Extension.swift */; };
+		583E445B2ABFE1AC00CB19DF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		583E44452ABDB57400CB19DF /* loginUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		583E44522ABDCC7D00CB19DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		583E44542ABDD2FC00CB19DF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		583E44582ABFD74F00CB19DF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,9 @@
 				583E44242ABDB57200CB19DF /* SceneDelegate.swift */,
 				583E44282ABDB57200CB19DF /* Main.storyboard */,
 				583E44542ABDD2FC00CB19DF /* RegisterViewController.swift */,
+				583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */,
 				583E44522ABDCC7D00CB19DF /* LoginViewController.swift */,
+				583E44582ABFD74F00CB19DF /* Color+Extension.swift */,
 				583E442B2ABDB57400CB19DF /* Assets.xcassets */,
 				583E442D2ABDB57400CB19DF /* LaunchScreen.storyboard */,
 				583E44302ABDB57400CB19DF /* Info.plist */,
@@ -261,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583E445B2ABFE1AC00CB19DF /* UIView+Extension.swift in Sources */,
 				583E44532ABDCC7D00CB19DF /* LoginViewController.swift in Sources */,
+				583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */,
 				583E44232ABDB57200CB19DF /* AppDelegate.swift in Sources */,
 				583E44252ABDB57200CB19DF /* SceneDelegate.swift in Sources */,
 				583E44552ABDD2FC00CB19DF /* RegisterViewController.swift in Sources */,
