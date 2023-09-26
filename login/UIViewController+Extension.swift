@@ -25,8 +25,9 @@ extension UIViewController {
         let attributedString = NSMutableAttributedString(string: wholeText)
         
         texts.indices.forEach { index in
-            attributedString.addAttributes(.font, value: customFonts[index], range: customTextsRanges[index])
-            attributedString.addAttributes(.forgrondColor, value: customColors[index],range: customTextsRanges[index])
+            attributedString.addAttribute(
+                .font, value: customFonts[index], range: customTextsRanges[index])
+            attributedString.addAttribute(.foregroundColor, value: customColors[index],range: customTextsRanges[index])
             
         }
         return attributedString

@@ -147,6 +147,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fxr-ap-bIm"/>
+                    <connections>
+                        <outlet property="registerButton" destination="TBv-VY-Pqx" id="H9b-5d-g6h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
