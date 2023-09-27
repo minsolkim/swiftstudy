@@ -20,6 +20,7 @@
 		583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44582ABFD74F00CB19DF /* Color+Extension.swift */; };
 		583E445B2ABFE1AC00CB19DF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */; };
 		583E445D2AC1C5F900CB19DF /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E445C2AC1C5F900CB19DF /* UIViewController+Extension.swift */; };
+		583E445F2AC4099100CB19DF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E445E2AC4099100CB19DF /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		583E44582ABFD74F00CB19DF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		583E445C2AC1C5F900CB19DF /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		583E445E2AC4099100CB19DF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				583E44222ABDB57200CB19DF /* AppDelegate.swift */,
 				583E44242ABDB57200CB19DF /* SceneDelegate.swift */,
 				583E44282ABDB57200CB19DF /* Main.storyboard */,
+				583E445E2AC4099100CB19DF /* UserInfo.swift */,
 				583E44542ABDD2FC00CB19DF /* RegisterViewController.swift */,
 				583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */,
 				583E445C2AC1C5F900CB19DF /* UIViewController+Extension.swift */,
@@ -274,6 +277,7 @@
 				583E44532ABDCC7D00CB19DF /* LoginViewController.swift in Sources */,
 				583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */,
 				583E44232ABDB57200CB19DF /* AppDelegate.swift in Sources */,
+				583E445F2AC4099100CB19DF /* UserInfo.swift in Sources */,
 				583E445D2AC1C5F900CB19DF /* UIViewController+Extension.swift in Sources */,
 				583E44252ABDB57200CB19DF /* SceneDelegate.swift in Sources */,
 				583E44552ABDD2FC00CB19DF /* RegisterViewController.swift in Sources */,

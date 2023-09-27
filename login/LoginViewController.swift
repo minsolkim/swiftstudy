@@ -10,8 +10,12 @@ import UIKit
 class LoginViewController: UIViewController {
     var email = String()
     var password = String()
+    var userInfo : UserInfo?
     
     @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
@@ -22,6 +26,11 @@ class LoginViewController: UIViewController {
 
     @IBAction func emailTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        if text.isValidEmail() {
+            self.loginButton.backgroundColor = .facebookColor
+        } else {
+            self.loginButton.backgroundColor = .disabledButtonColor
+        }
         self.email = text
         
     }
@@ -29,10 +38,28 @@ class LoginViewController: UIViewController {
     
     @IBAction func passwordTextFieldEditingChanged(_ sender: UITextField) {
         let text = sender.text ?? ""
+        
+        self.loginButton.backgroundColor
+        = text.count>2 ? .facebookColor : .disabledButtonColor
         self.password = text
     }
     
     @IBAction func loginButtonDidTab(_ sender: UIButton) {
+        //회원가입정보를 전달받아, 그것과 textfield 데이터가 일치하면,
+        //로그인이 되어야 한다.
+        guard let userInfo = self.userInfo else {return }
+        if userInfo.email == self.email && userInfo.password == self.password{
+            let vc =
+            storyboard?
+                .instantiateViewController(withIdentifier: "TabBarVC") as!
+            UITabBarController
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true,
+            completion: nil)
+        }
+        else {
+            
+        }
     }
     
     @IBAction func registerButtonDidTab(_ sender: UIButton) {
@@ -45,6 +72,10 @@ class LoginViewController: UIViewController {
         //화면전환 메소드를 이용해서 화면전환
 //        self.present(registerViewController, animated: true,completion: nil)
         self.navigationController?.pushViewController(registerViewController, animated: true)
+        //ARC -> 강한참조 / 약한참조 -> ARC 낮춰줌
+        registerViewController.userInfo = { [weak self] (userInfo) in
+            self?.userInfo = userInfo
+        }
     }
     private func setupAttribute() {
         let text1 = "계정이 없으신가요?"
