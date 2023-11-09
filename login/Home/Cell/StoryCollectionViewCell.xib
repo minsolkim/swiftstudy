@@ -42,7 +42,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sollaasido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-ba-lPr">
-                                <rect key="frame" x="77.666666666666671" y="50" width="47.666666666666671" height="11"/>
+                                <rect key="frame" x="77.666666666666671" y="53" width="47.666666666666671" height="11"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                         <constraints>
                             <constraint firstItem="Iav-ba-lPr" firstAttribute="centerX" secondItem="5r3-sd-sjv" secondAttribute="centerX" id="1xf-tb-34n"/>
                             <constraint firstItem="2n6-nu-ILk" firstAttribute="centerX" secondItem="5r3-sd-sjv" secondAttribute="centerX" id="7io-4R-Drp"/>
-                            <constraint firstItem="Iav-ba-lPr" firstAttribute="top" secondItem="2n6-nu-ILk" secondAttribute="bottom" constant="2" id="ThS-eP-llV"/>
+                            <constraint firstItem="Iav-ba-lPr" firstAttribute="top" secondItem="2n6-nu-ILk" secondAttribute="bottom" constant="5" id="ThS-eP-llV"/>
                             <constraint firstItem="2n6-nu-ILk" firstAttribute="top" secondItem="5r3-sd-sjv" secondAttribute="top" id="UBH-N2-yBP"/>
                         </constraints>
                     </view>

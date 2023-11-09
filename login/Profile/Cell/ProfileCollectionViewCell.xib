@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="gTV-IL-0wX" customClass="ProfileCollectionViewCell" customModule="login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="159"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="159"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dER-Pi-6aL">
+                        <rect key="frame" x="10" y="10" width="88" height="88"/>
+                        <color key="backgroundColor" red="0.25119093139999998" green="0.79827183489999998" blue="0.68745839559999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="UNI-Kh-vPG"/>
+                            <constraint firstAttribute="width" constant="88" id="cy0-2G-LTj"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3nD-dy-Iir">
+                        <rect key="frame" x="74" y="75" width="24" height="22.666666666666671"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="A72-aY-5D3"/>
+                            <constraint firstAttribute="width" constant="24" id="gK8-4D-JXp"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3nD-dy-Iir" firstAttribute="bottom" secondItem="dER-Pi-6aL" secondAttribute="bottom" id="cXr-ZL-yHr"/>
+                <constraint firstItem="dER-Pi-6aL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="eRp-ay-uIW"/>
+                <constraint firstItem="dER-Pi-6aL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="eZn-dU-Ag9"/>
+                <constraint firstItem="3nD-dy-Iir" firstAttribute="trailing" secondItem="dER-Pi-6aL" secondAttribute="trailing" id="msO-xI-ydc"/>
+            </constraints>
+            <size key="customSize" width="355" height="103"/>
+            <connections>
+                <outlet property="addProfileImageView" destination="3nD-dy-Iir" id="2jU-wk-UZv"/>
+                <outlet property="profileImageView" destination="dER-Pi-6aL" id="ifE-SM-C0Q"/>
+            </connections>
+            <point key="canvasLocation" x="87.786259541984734" y="1.0563380281690142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="128" height="123"/>
+    </resources>
+</document>

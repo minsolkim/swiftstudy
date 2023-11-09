@@ -329,33 +329,55 @@
             </objects>
             <point key="canvasLocation" x="1794.6564885496182" y="3.5211267605633805"/>
         </scene>
-        <!--프로필-->
+        <!--Profile View Controller-->
         <scene sceneID="tjZ-9Z-OvP">
             <objects>
-                <viewController id="pcv-7s-H0u" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" id="pcv-7s-H0u" customClass="ProfileViewController" customModule="login" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1sC-lm-uPb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="프로필" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGt-21-JRu">
-                                <rect key="frame" x="151" y="405" width="91" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wG3-sG-xqX">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WuK-fG-JMn">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P41-0q-fbq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PGt-21-JRu" firstAttribute="centerX" secondItem="1sC-lm-uPb" secondAttribute="centerX" id="1jG-l2-7Xd"/>
-                            <constraint firstItem="PGt-21-JRu" firstAttribute="centerY" secondItem="1sC-lm-uPb" secondAttribute="centerY" id="DMU-eC-0L2"/>
+                            <constraint firstItem="wG3-sG-xqX" firstAttribute="top" secondItem="P41-0q-fbq" secondAttribute="top" id="4Bh-Rn-8lm"/>
+                            <constraint firstItem="P41-0q-fbq" firstAttribute="trailing" secondItem="wG3-sG-xqX" secondAttribute="trailing" id="CRH-xZ-AUp"/>
+                            <constraint firstItem="wG3-sG-xqX" firstAttribute="leading" secondItem="P41-0q-fbq" secondAttribute="leading" id="Eij-v6-iZH"/>
+                            <constraint firstItem="P41-0q-fbq" firstAttribute="bottom" secondItem="wG3-sG-xqX" secondAttribute="bottom" id="sWg-ee-Dij"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="프로필" id="9BR-oY-Iu3"/>
+                    <navigationItem key="navigationItem" id="dpr-pT-NsB">
+                        <barButtonItem key="leftBarButtonItem" title="Nickname" id="MLp-QH-Pxj">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="7UT-Ag-UbY">
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="aGY-2J-AKa">
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="wG3-sG-xqX" id="OUf-N9-JZY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zB-rM-3wU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098" y="1503"/>
+            <point key="canvasLocation" x="2023.6641221374045" y="1502.8169014084508"/>
         </scene>
         <!--홈-->
         <scene sceneID="6k4-cq-ATJ">
@@ -441,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsa-Hz-FYn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2459" y="1503"/>
+            <point key="canvasLocation" x="3385.4961832061067" y="1502.8169014084508"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sI0-eJ-6cw">
@@ -454,7 +476,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="iY4-Xg-AjH" kind="relationship" relationship="viewControllers" id="O0U-Eu-Lwm"/>
-                        <segue destination="pcv-7s-H0u" kind="relationship" relationship="viewControllers" id="B8V-Xq-ZEI"/>
+                        <segue destination="U0q-wi-6nL" kind="relationship" relationship="viewControllers" id="B8V-Xq-ZEI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98j-wx-nNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -479,6 +501,25 @@
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
+        <!--프로필-->
+        <scene sceneID="ZL0-YN-qzw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U0q-wi-6nL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="프로필" id="9BR-oY-Iu3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Il-5O-2jt">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pcv-7s-H0u" kind="relationship" relationship="rootViewController" id="OuW-YM-4Qm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATR-TD-gMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.9465648854962" y="1502.8169014084508"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
@@ -487,12 +528,17 @@
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="disabledButtonColor">
             <color red="0.77647058823529413" green="0.87058823529411766" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="facebookColor">
             <color red="0.25490196078431371" green="0.57647058823529407" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
