@@ -17,6 +17,8 @@
 		583BD7F32AFD1D550006DA52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD7F22AFD1D550006DA52 /* ProfileViewController.swift */; };
 		583BD7F72AFD20B40006DA52 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD7F52AFD20B40006DA52 /* ProfileCollectionViewCell.swift */; };
 		583BD7F82AFD20B40006DA52 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583BD7F62AFD20B40006DA52 /* ProfileCollectionViewCell.xib */; };
+		583BD7FD2AFDDEA40006DA52 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD7FB2AFDDEA40006DA52 /* PostCollectionViewCell.swift */; };
+		583BD7FE2AFDDEA40006DA52 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583BD7FC2AFDDEA40006DA52 /* PostCollectionViewCell.xib */; };
 		583E44232ABDB57200CB19DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44222ABDB57200CB19DF /* AppDelegate.swift */; };
 		583E44252ABDB57200CB19DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E44242ABDB57200CB19DF /* SceneDelegate.swift */; };
 		583E442A2ABDB57200CB19DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583E44282ABDB57200CB19DF /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		583BD7F22AFD1D550006DA52 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		583BD7F52AFD20B40006DA52 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		583BD7F62AFD20B40006DA52 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		583BD7FB2AFDDEA40006DA52 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		583BD7FC2AFDDEA40006DA52 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		583E441F2ABDB57200CB19DF /* login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		583E44222ABDB57200CB19DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		583E44242ABDB57200CB19DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,10 +144,28 @@
 		583BD7F42AFD20900006DA52 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				583BD7FA2AFDDE810006DA52 /* PostCell */,
+				583BD7F92AFDDE640006DA52 /* ProfileCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		583BD7F92AFDDE640006DA52 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
 				583BD7F52AFD20B40006DA52 /* ProfileCollectionViewCell.swift */,
 				583BD7F62AFD20B40006DA52 /* ProfileCollectionViewCell.xib */,
 			);
-			path = Cell;
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		583BD7FA2AFDDE810006DA52 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				583BD7FB2AFDDEA40006DA52 /* PostCollectionViewCell.swift */,
+				583BD7FC2AFDDEA40006DA52 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		583E44162ABDB57200CB19DF = {
@@ -308,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583BD7FE2AFDDEA40006DA52 /* PostCollectionViewCell.xib in Resources */,
 				583E442F2ABDB57400CB19DF /* LaunchScreen.storyboard in Resources */,
 				583BD77D2AEE15AA0006DA52 /* FeedTableViewCell.xib in Resources */,
 				583E442C2ABDB57400CB19DF /* Assets.xcassets in Resources */,
@@ -344,6 +367,7 @@
 				583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */,
 				583BD7802AEE2FEF0006DA52 /* StoryTableViewCell.swift in Sources */,
 				583BD7EE2AFBCCAB0006DA52 /* StoryCollectionViewCell.swift in Sources */,
+				583BD7FD2AFDDEA40006DA52 /* PostCollectionViewCell.swift in Sources */,
 				583E44232ABDB57200CB19DF /* AppDelegate.swift in Sources */,
 				583E445F2AC4099100CB19DF /* UserInfo.swift in Sources */,
 				583BD7782AEE128D0006DA52 /* HomeViewController.swift in Sources */,
