@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5828A2BB2B2B1D18006BAA6E /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2BA2B2B1D18006BAA6E /* FeedAPIInput.swift */; };
+		5828A2BD2B2B1D63006BAA6E /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2BC2B2B1D63006BAA6E /* FeedModel.swift */; };
+		5828A2BF2B2B1D97006BAA6E /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2BE2B2B1D97006BAA6E /* FeedDataManager.swift */; };
 		583BD7782AEE128D0006DA52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD7772AEE128D0006DA52 /* HomeViewController.swift */; };
 		583BD77C2AEE15AA0006DA52 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD77A2AEE15AA0006DA52 /* FeedTableViewCell.swift */; };
 		583BD77D2AEE15AA0006DA52 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583BD77B2AEE15AA0006DA52 /* FeedTableViewCell.xib */; };
@@ -59,6 +62,9 @@
 		1D772BCA3EE683DF66F96779 /* Pods-login-loginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login-loginUITests.release.xcconfig"; path = "Target Support Files/Pods-login-loginUITests/Pods-login-loginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4EAD5BF65938EC7F037880FE /* Pods_login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC4D50CEA3049C47C8F978 /* Pods_loginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5828A2BA2B2B1D18006BAA6E /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		5828A2BC2B2B1D63006BAA6E /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		5828A2BE2B2B1D97006BAA6E /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 		583BD7772AEE128D0006DA52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		583BD77A2AEE15AA0006DA52 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		583BD77B2AEE15AA0006DA52 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -125,9 +131,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5828A2B92B2B1CDF006BAA6E /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5828A2BA2B2B1D18006BAA6E /* FeedAPIInput.swift */,
+				5828A2BC2B2B1D63006BAA6E /* FeedModel.swift */,
+				5828A2BE2B2B1D97006BAA6E /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
 		583BD7762AEE12330006DA52 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5828A2B92B2B1CDF006BAA6E /* FeedDataManager */,
 				583BD7792AEE15510006DA52 /* Cell */,
 				583BD7772AEE128D0006DA52 /* HomeViewController.swift */,
 			);
@@ -253,7 +270,6 @@
 				A2329CEEC6AFA576FD2D49AA /* Pods-loginTests.debug.xcconfig */,
 				E2CBA23447EF7C339BF55647 /* Pods-loginTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -513,6 +529,7 @@
 			files = (
 				583E445B2ABFE1AC00CB19DF /* UIView+Extension.swift in Sources */,
 				583E44532ABDCC7D00CB19DF /* LoginViewController.swift in Sources */,
+				5828A2BD2B2B1D63006BAA6E /* FeedModel.swift in Sources */,
 				583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */,
 				583BD7802AEE2FEF0006DA52 /* StoryTableViewCell.swift in Sources */,
 				583BD7EE2AFBCCAB0006DA52 /* StoryCollectionViewCell.swift in Sources */,
@@ -522,8 +539,10 @@
 				583BD7782AEE128D0006DA52 /* HomeViewController.swift in Sources */,
 				583E445D2AC1C5F900CB19DF /* UIViewController+Extension.swift in Sources */,
 				583E44252ABDB57200CB19DF /* SceneDelegate.swift in Sources */,
+				5828A2BB2B2B1D18006BAA6E /* FeedAPIInput.swift in Sources */,
 				583BD7F72AFD20B40006DA52 /* ProfileCollectionViewCell.swift in Sources */,
 				583BD7F32AFD1D550006DA52 /* ProfileViewController.swift in Sources */,
+				5828A2BF2B2B1D97006BAA6E /* FeedDataManager.swift in Sources */,
 				583E44552ABDD2FC00CB19DF /* RegisterViewController.swift in Sources */,
 				583BD77C2AEE15AA0006DA52 /* FeedTableViewCell.swift in Sources */,
 			);
