@@ -23,26 +23,38 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-nu-ILk">
                                 <rect key="frame" x="77.666666666666671" y="0.0" width="48" height="48"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-JG-p8n">
-                                        <rect key="frame" x="1.3333333333333286" y="3.6666666666666643" width="45" height="41.666666666666671"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-OW-goB">
+                                        <rect key="frame" x="0.3333333333333286" y="0.66666666666666785" width="47" height="47"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-JG-p8n">
+                                                <rect key="frame" x="1" y="3" width="45" height="41.666666666666671"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="45" id="TMO-by-MRG"/>
+                                                    <constraint firstAttribute="height" constant="45" id="mGL-Dz-7zq"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="45" id="TMO-by-MRG"/>
-                                            <constraint firstAttribute="height" constant="45" id="mGL-Dz-7zq"/>
+                                            <constraint firstAttribute="height" constant="47" id="8wH-My-f2V"/>
+                                            <constraint firstAttribute="width" constant="47" id="DDm-jH-9Lb"/>
+                                            <constraint firstItem="lKQ-JG-p8n" firstAttribute="centerY" secondItem="cIu-OW-goB" secondAttribute="centerY" id="njt-my-CLb"/>
+                                            <constraint firstItem="lKQ-JG-p8n" firstAttribute="centerX" secondItem="cIu-OW-goB" secondAttribute="centerX" id="w1c-dR-wI0"/>
                                         </constraints>
-                                    </imageView>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <constraints>
-                                    <constraint firstItem="lKQ-JG-p8n" firstAttribute="centerX" secondItem="2n6-nu-ILk" secondAttribute="centerX" id="B3Z-GF-Ilk"/>
+                                    <constraint firstItem="cIu-OW-goB" firstAttribute="centerY" secondItem="2n6-nu-ILk" secondAttribute="centerY" id="Zvq-ng-Vgf"/>
                                     <constraint firstAttribute="height" constant="48" id="c8A-il-k67"/>
-                                    <constraint firstItem="lKQ-JG-p8n" firstAttribute="centerY" secondItem="2n6-nu-ILk" secondAttribute="centerY" id="iSk-8G-65h"/>
+                                    <constraint firstItem="cIu-OW-goB" firstAttribute="centerX" secondItem="2n6-nu-ILk" secondAttribute="centerX" id="hx7-fy-GFo"/>
                                     <constraint firstAttribute="width" constant="48" id="nIF-4m-psO"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sollaasido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iav-ba-lPr">
-                                <rect key="frame" x="77.666666666666671" y="53" width="47.666666666666671" height="11"/>
+                                <rect key="frame" x="77.666666666666671" y="50" width="47.666666666666671" height="11"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +64,7 @@
                         <constraints>
                             <constraint firstItem="Iav-ba-lPr" firstAttribute="centerX" secondItem="5r3-sd-sjv" secondAttribute="centerX" id="1xf-tb-34n"/>
                             <constraint firstItem="2n6-nu-ILk" firstAttribute="centerX" secondItem="5r3-sd-sjv" secondAttribute="centerX" id="7io-4R-Drp"/>
-                            <constraint firstItem="Iav-ba-lPr" firstAttribute="top" secondItem="2n6-nu-ILk" secondAttribute="bottom" constant="5" id="ThS-eP-llV"/>
+                            <constraint firstItem="Iav-ba-lPr" firstAttribute="top" secondItem="2n6-nu-ILk" secondAttribute="bottom" constant="2" id="ThS-eP-llV"/>
                             <constraint firstItem="2n6-nu-ILk" firstAttribute="top" secondItem="5r3-sd-sjv" secondAttribute="top" id="UBH-N2-yBP"/>
                         </constraints>
                     </view>
@@ -69,8 +81,8 @@
             <connections>
                 <outlet property="imageViewUserProfile" destination="lKQ-JG-p8n" id="fZK-cb-Ene"/>
                 <outlet property="labelUser" destination="Iav-ba-lPr" id="r6p-4w-A5R"/>
-                <outlet property="viewImageViewBackground" destination="5r3-sd-sjv" id="5EU-In-iYC"/>
-                <outlet property="viewUserProfileBackground" destination="2n6-nu-ILk" id="iCV-eR-kO4"/>
+                <outlet property="userprofile" destination="cIu-OW-goB" id="zKT-Xi-jtX"/>
+                <outlet property="viewImageViewBackground" destination="2n6-nu-ILk" id="O56-Ih-Vhb"/>
             </connections>
             <point key="canvasLocation" x="17.557251908396946" y="-2.4647887323943665"/>
         </collectionViewCell>
@@ -79,6 +91,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

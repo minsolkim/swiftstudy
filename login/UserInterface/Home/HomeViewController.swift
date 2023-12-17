@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] =  []
+    let imagePickerViewController = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -26,8 +27,14 @@ class HomeViewController: UIViewController {
         
         let input = FeedAPIInput(limit: 30, page: 10)
         FeedDataManager().feedDataManager(input, self)
+        
+        imagePickerViewController.delegate = self
     }
 
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController, animated: true, completion: nil)
+    }
 }
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -87,5 +94,16 @@ extension HomeViewController {
         arrayCat = result
         tableView.reloadData()
         
+    }
+}
+extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let imageString = "gs://catstagram-d7fbf.appspot.com/Cat1"
+            
+            let input = FeedUploadInput(content: "저희 상이입니다. 귀엽지 않나요?",postImageUrl: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            self.dismiss(animated: true,completion: nil)
+        }
     }
 }
