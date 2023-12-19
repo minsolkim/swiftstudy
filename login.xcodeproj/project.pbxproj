@@ -13,6 +13,12 @@
 		5828A3002B2EE550006BAA6E /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A2FF2B2EE550006BAA6E /* FeedUploadInput.swift */; };
 		5828A3022B2EE5A0006BAA6E /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3012B2EE5A0006BAA6E /* FeedUploadModel.swift */; };
 		5828A3042B2EE66C006BAA6E /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3032B2EE66C006BAA6E /* FeedUploadDataManager.swift */; };
+		5828A30A2B313B9A006BAA6E /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3092B313B9A006BAA6E /* UserFeedModel.swift */; };
+		5828A30C2B313FCF006BAA6E /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A30B2B313FCF006BAA6E /* UserFeedDataManager.swift */; };
+		5828A3102B314AC4006BAA6E /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A30F2B314AC4006BAA6E /* DeleteUserFeed.swift */; };
+		5828A3122B315521006BAA6E /* ReelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3112B315521006BAA6E /* ReelsViewController.swift */; };
+		5828A3152B3155E3006BAA6E /* ReelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5828A3132B3155E3006BAA6E /* ReelsCollectionViewCell.swift */; };
+		5828A3162B3155E3006BAA6E /* ReelsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5828A3142B3155E3006BAA6E /* ReelsCollectionViewCell.xib */; };
 		583BD7782AEE128D0006DA52 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD7772AEE128D0006DA52 /* HomeViewController.swift */; };
 		583BD77C2AEE15AA0006DA52 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583BD77A2AEE15AA0006DA52 /* FeedTableViewCell.swift */; };
 		583BD77D2AEE15AA0006DA52 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 583BD77B2AEE15AA0006DA52 /* FeedTableViewCell.xib */; };
@@ -71,6 +77,12 @@
 		5828A2FF2B2EE550006BAA6E /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
 		5828A3012B2EE5A0006BAA6E /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
 		5828A3032B2EE66C006BAA6E /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		5828A3092B313B9A006BAA6E /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		5828A30B2B313FCF006BAA6E /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
+		5828A30F2B314AC4006BAA6E /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
+		5828A3112B315521006BAA6E /* ReelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsViewController.swift; sourceTree = "<group>"; };
+		5828A3132B3155E3006BAA6E /* ReelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsCollectionViewCell.swift; sourceTree = "<group>"; };
+		5828A3142B3155E3006BAA6E /* ReelsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReelsCollectionViewCell.xib; sourceTree = "<group>"; };
 		583BD7772AEE128D0006DA52 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		583BD77A2AEE15AA0006DA52 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		583BD77B2AEE15AA0006DA52 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
@@ -178,11 +190,37 @@
 		5828A3072B2EEBE3006BAA6E /* UserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				583BD7F12AFD1D350006DA52 /* Profile */,
 				583BD7762AEE12330006DA52 /* Home */,
+				583BD7F12AFD1D350006DA52 /* Profile */,
 				5828A3062B2EEB92006BAA6E /* Authentication */,
 			);
 			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		5828A3082B313B7F006BAA6E /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				5828A30B2B313FCF006BAA6E /* UserFeedDataManager.swift */,
+				5828A30E2B314AAB006BAA6E /* DeleteUserFeed */,
+				5828A30D2B314A83006BAA6E /* UserFeed */,
+			);
+			path = UserFeedDataManager;
+			sourceTree = "<group>";
+		};
+		5828A30D2B314A83006BAA6E /* UserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				5828A3092B313B9A006BAA6E /* UserFeedModel.swift */,
+			);
+			path = UserFeed;
+			sourceTree = "<group>";
+		};
+		5828A30E2B314AAB006BAA6E /* DeleteUserFeed */ = {
+			isa = PBXGroup;
+			children = (
+				5828A30F2B314AC4006BAA6E /* DeleteUserFeed.swift */,
+			);
+			path = DeleteUserFeed;
 			sourceTree = "<group>";
 		};
 		583BD7762AEE12330006DA52 /* Home */ = {
@@ -213,6 +251,7 @@
 		583BD7F12AFD1D350006DA52 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5828A3082B313B7F006BAA6E /* UserFeedDataManager */,
 				583BD7F42AFD20900006DA52 /* Cell */,
 				583BD7F22AFD1D550006DA52 /* ProfileViewController.swift */,
 			);
@@ -274,6 +313,9 @@
 				5828A3052B2EEB6D006BAA6E /* App */,
 				5828A3072B2EEBE3006BAA6E /* UserInterface */,
 				583E44282ABDB57200CB19DF /* Main.storyboard */,
+				5828A3132B3155E3006BAA6E /* ReelsCollectionViewCell.swift */,
+				5828A3142B3155E3006BAA6E /* ReelsCollectionViewCell.xib */,
+				5828A3112B315521006BAA6E /* ReelsViewController.swift */,
 				583E445A2ABFE1AC00CB19DF /* UIView+Extension.swift */,
 				583E445C2AC1C5F900CB19DF /* UIViewController+Extension.swift */,
 				583E44582ABFD74F00CB19DF /* Color+Extension.swift */,
@@ -440,6 +482,7 @@
 				583BD7F82AFD20B40006DA52 /* ProfileCollectionViewCell.xib in Resources */,
 				583BD7812AEE2FEF0006DA52 /* StoryTableViewCell.xib in Resources */,
 				583BD7EF2AFBCCAB0006DA52 /* StoryCollectionViewCell.xib in Resources */,
+				5828A3162B3155E3006BAA6E /* ReelsCollectionViewCell.xib in Resources */,
 				583E442A2ABDB57200CB19DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,9 +614,12 @@
 				583E445B2ABFE1AC00CB19DF /* UIView+Extension.swift in Sources */,
 				583E44532ABDCC7D00CB19DF /* LoginViewController.swift in Sources */,
 				5828A3022B2EE5A0006BAA6E /* FeedUploadModel.swift in Sources */,
+				5828A30C2B313FCF006BAA6E /* UserFeedDataManager.swift in Sources */,
 				5828A2BD2B2B1D63006BAA6E /* FeedModel.swift in Sources */,
 				583E44592ABFD74F00CB19DF /* Color+Extension.swift in Sources */,
+				5828A3152B3155E3006BAA6E /* ReelsCollectionViewCell.swift in Sources */,
 				5828A3002B2EE550006BAA6E /* FeedUploadInput.swift in Sources */,
+				5828A30A2B313B9A006BAA6E /* UserFeedModel.swift in Sources */,
 				583BD7802AEE2FEF0006DA52 /* StoryTableViewCell.swift in Sources */,
 				583BD7EE2AFBCCAB0006DA52 /* StoryCollectionViewCell.swift in Sources */,
 				583BD7FD2AFDDEA40006DA52 /* PostCollectionViewCell.swift in Sources */,
@@ -582,11 +628,13 @@
 				583BD7782AEE128D0006DA52 /* HomeViewController.swift in Sources */,
 				5828A3042B2EE66C006BAA6E /* FeedUploadDataManager.swift in Sources */,
 				583E445D2AC1C5F900CB19DF /* UIViewController+Extension.swift in Sources */,
+				5828A3122B315521006BAA6E /* ReelsViewController.swift in Sources */,
 				583E44252ABDB57200CB19DF /* SceneDelegate.swift in Sources */,
 				5828A2BB2B2B1D18006BAA6E /* FeedAPIInput.swift in Sources */,
 				583BD7F72AFD20B40006DA52 /* ProfileCollectionViewCell.swift in Sources */,
 				583BD7F32AFD1D550006DA52 /* ProfileViewController.swift in Sources */,
 				5828A2BF2B2B1D97006BAA6E /* FeedDataManager.swift in Sources */,
+				5828A3102B314AC4006BAA6E /* DeleteUserFeed.swift in Sources */,
 				583E44552ABDD2FC00CB19DF /* RegisterViewController.swift in Sources */,
 				583BD77C2AEE15AA0006DA52 /* FeedTableViewCell.swift in Sources */,
 			);

@@ -377,7 +377,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zB-rM-3wU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023.6641221374045" y="1502.8169014084508"/>
+            <point key="canvasLocation" x="253" y="1536"/>
+        </scene>
+        <!--릴스-->
+        <scene sceneID="Ml5-yN-z1X">
+            <objects>
+                <viewController storyboardIdentifier="ReelsVC" id="iRa-VT-2wv" customClass="ReelsViewController" customModule="login" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9kD-yO-ZcN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vyC-Ii-5GC">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vBs-s8-X0o">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="guH-o2-51f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vyC-Ii-5GC" firstAttribute="top" secondItem="guH-o2-51f" secondAttribute="top" id="CwP-7N-lHW"/>
+                            <constraint firstItem="guH-o2-51f" firstAttribute="bottom" secondItem="vyC-Ii-5GC" secondAttribute="bottom" id="Fd2-PB-jy6"/>
+                            <constraint firstItem="guH-o2-51f" firstAttribute="trailing" secondItem="vyC-Ii-5GC" secondAttribute="trailing" id="ddx-ET-ABg"/>
+                            <constraint firstItem="vyC-Ii-5GC" firstAttribute="leading" secondItem="guH-o2-51f" secondAttribute="leading" id="df0-oW-TDs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="릴스" id="LrW-wO-Ebb"/>
+                    <connections>
+                        <outlet property="collectionView" destination="vyC-Ii-5GC" id="Peu-7k-mIR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wE0-Fm-aj0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2033" y="1536"/>
         </scene>
         <!--홈-->
         <scene sceneID="6k4-cq-ATJ">
@@ -480,6 +518,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="iY4-Xg-AjH" kind="relationship" relationship="viewControllers" id="O0U-Eu-Lwm"/>
+                        <segue destination="iRa-VT-2wv" kind="relationship" relationship="viewControllers" id="fHK-g2-KhJ"/>
                         <segue destination="U0q-wi-6nL" kind="relationship" relationship="viewControllers" id="B8V-Xq-ZEI"/>
                     </connections>
                 </tabBarController>
