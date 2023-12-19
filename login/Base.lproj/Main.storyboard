@@ -408,7 +408,7 @@
                             <constraint firstItem="vyC-Ii-5GC" firstAttribute="leading" secondItem="guH-o2-51f" secondAttribute="leading" id="df0-oW-TDs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="릴스" id="LrW-wO-Ebb"/>
+                    <tabBarItem key="tabBarItem" title="릴스" image="video.bubble.left" catalog="system" id="LrW-wO-Ebb"/>
                     <connections>
                         <outlet property="collectionView" destination="vyC-Ii-5GC" id="Peu-7k-mIR"/>
                     </connections>
@@ -575,6 +575,7 @@
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="video.bubble.left" catalog="system" width="128" height="110"/>
         <namedColor name="disabledButtonColor">
             <color red="0.77647058823529413" green="0.87058823529411766" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
