@@ -54,9 +54,7 @@ class LoginViewController: UIViewController {
             storyboard?
                 .instantiateViewController(withIdentifier: "TabBarVC") as!
             UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true,
-            completion: nil)
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
         }
         else {
             
